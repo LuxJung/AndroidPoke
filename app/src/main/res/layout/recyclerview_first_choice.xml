@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#5B99B6E6"
+    android:orientation="vertical"
+
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/recylcerview_first_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@drawable/profile_bolder"
+        android:src="@mipmap/ic_launcher_round"
+        android:transitionName="Poketmon_first_IMG" />
+
+    <LinearLayout
+        android:background="@drawable/background_color_bolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recylcerview_first_image"
+        android:orientation="horizontal">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text=" No. "
+            android:textColor="#3f3f3f"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/recylcerview_first_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:hint="001"
+            android:textColor="#3f3f3f"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recylcerview_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:hint="글자입니다."
+            android:textColor="#3f3f3f"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

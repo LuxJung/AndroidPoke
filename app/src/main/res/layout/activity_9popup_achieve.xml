@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    tools:context=".Activity_9PopUp_Achieve"
+    tools:ignore="ButtonStyle,UseCompoundDrawables,DisableBaselineAlignment,TooDeepLayout,ScrollViewSize,HardcodedText,UselessParent, NestedWeights,InefficientWeight, RtlSymmetry, RtlHardcoded, ContentDescription" >
+
+
+<ImageView
+        android:id="@+id/popup_achieve_Ttl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000ffff"
+        android:src="@drawable/achievettl" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/popupbackground"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RV"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="5dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarThumbVertical="@color/scrollBar"
+            android:scrollbars="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/popup_achieve_Close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#0000ffff"
+        android:src="@drawable/close" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:transitionName="Poketmon_IMG"
+        android:background="@drawable/profile_bolder"
+        android:layout_width="wrap_content"
+        android:id="@+id/recylcerview_row_profileimage"
+        android:src="@mipmap/ic_launcher_round"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

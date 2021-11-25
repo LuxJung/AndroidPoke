@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:background="@android:color/transparent"
+android:layout_height="match_parent"
+    android:layout_margin="50dp"
+android:orientation="vertical"
+android:layout_gravity="center"
+tools:context=".Activity_9PopUp_Evolution"
+tools:ignore="ButtonStyle,UseCompoundDrawables,DisableBaselineAlignment,TooDeepLayout,ScrollViewSize,HardcodedText,UselessParent, NestedWeights,InefficientWeight, RtlSymmetry, RtlHardcoded, ContentDescription" >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@drawable/popupbackground"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:background="#0000ffff"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/evolution" />
+    <ImageView
+        android:id="@+id/evolution"
+        android:layout_margin="10dp"
+        android:background="#0000ffff"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ggobugi" />
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/evolution_Yes"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:background="#0000ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yes"/>
+        <ImageButton
+            android:id="@+id/evolution_No"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:background="#0000ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+</LinearLayout>

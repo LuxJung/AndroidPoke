@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shootinggame.gameshooting">
+    <!-- ↓↓↓ 액티비티가 실행 중 꺼지지 않도록 ↓↓↓ -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- ↓↓↓ 진동권한 ↓↓↓ -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- ↓↓↓ 사용자의 기기가 가로방향 지원이 안되는 경우 플레이스토어에서 거를 수 있도록 ↓↓↓ -->
+    <uses-permission android:name="com.android.vending.BILLING" /> <!-- ↓↓↓ 사용자의 기기가 가로방향 지원이 안되는 경우 플레이스토어에서 거를 수 있도록 ↓↓↓ -->
+    <uses-feature
+        android:name="android.hardware.screen.sensorLandscape"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:isGame="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.shootinggame.gameshooting.Activity_7GameResult"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+
+        <service
+            android:name="com.shootinggame.gameshooting.Service_CountDown"
+            android:enabled="true"
+            android:exported="true" /> <!-- ↓↓↓ 액티비티 가로모드 항상 해놓기 ↓↓↓ -->
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_1Splash"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_2Join"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_2_5FirstSelect"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_3Main"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_4Team"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_4Team_Powerup"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_5Book"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_5Book_Detail"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_6Store"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_7GameStart_Linear_Table"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_8InGame_Stage1"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_8InGame_Stage2"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" /> <!-- ↓↓↓ 팝업으로 사용하는 Activity ↓↓↓ -->
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_9PopUp_Achieve"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_9PopUp_Achieve2"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_9Popup_Buy"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_9PopUp_Setting"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_9PopUp_Mail"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_9PopUp_Quest"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_9PopUp_Exitgame"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_9PopUp_Evolution"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.shootinggame.gameshooting.Activity_9PopUp_Profile"
+            android:theme="@style/Transparent" /> <!-- ↓↓↓ 조이스틱 구현 예제 ↓↓↓ -->
+        <activity android:name="com.shootinggame.gameshooting.JoyStickSample" />
+    </application>
+
+</manifest>

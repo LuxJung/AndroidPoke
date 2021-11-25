@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".Activity_9PopUp_Mail"
+    tools:ignore="ButtonStyle,UseCompoundDrawables,DisableBaselineAlignment,TooDeepLayout,ScrollViewSize,HardcodedText,UselessParent, NestedWeights,InefficientWeight, RtlSymmetry, RtlHardcoded, ContentDescription" >
+
+
+<ImageView
+        android:id="@+id/mail_Img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000ffff"
+        android:src="@drawable/mailopen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/popupbackground"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/IB1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000ffff"
+            android:src="@drawable/receiveall" />
+
+        <ImageButton
+            android:id="@+id/IB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="#0000ffff"
+            android:src="@drawable/deleteall" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/IBclose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#0000ffff"
+        android:src="@drawable/close" />
+</LinearLayout>

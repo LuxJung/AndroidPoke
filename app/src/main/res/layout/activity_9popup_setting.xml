@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:background="@android:color/transparent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".Activity_9PopUp_Mail"
+    tools:ignore="ButtonStyle,UseCompoundDrawables,DisableBaselineAlignment,TooDeepLayout,ScrollViewSize,HardcodedText,UselessParent, NestedWeights,InefficientWeight, RtlSymmetry, RtlHardcoded, ContentDescription">
+
+
+<ImageView
+        android:id="@+id/mail_Img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000ffff"
+        android:src="@drawable/setting" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+
+    android:background="@drawable/popupbackground"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/popup_setting_BGMSound"
+            android:showText="true"
+            android:switchTextAppearance="@style/switch_style"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:thumb="@drawable/switch_state"
+            android:track="@drawable/switch_shape"
+            android:checked="true"
+            android:textSize="15dp"
+            android:switchPadding="30dp"
+            android:switchMinWidth="10dp"
+            android:text="배경음"
+            android:layout_margin="15dp"
+            android:textColor="#020A32"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            tools:ignore="SpUsage" />
+
+        <Switch
+            android:id="@+id/popup_setting_MotionSound"
+            android:showText="true"
+            android:switchTextAppearance="@style/switch_style"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:thumb="@drawable/switch_state"
+            android:track="@drawable/switch_shape"
+            android:checked="true"
+            android:textSize="15dp"
+            android:switchPadding="30dp"
+            android:switchMinWidth="10dp"
+            android:text="효과음"
+            android:layout_margin="15dp"
+            android:textColor="#020A32"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            tools:ignore="SpUsage" />
+
+        <Switch
+            android:id="@+id/popup_setting_Vibrate"
+            android:showText="true"
+            android:switchTextAppearance="@style/switch_style"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:thumb="@drawable/switch_state"
+            android:track="@drawable/switch_shape"
+            android:checked="true"
+            android:textSize="15dp"
+            android:switchPadding="30dp"
+            android:switchMinWidth="10dp"
+            android:text="진동"
+            android:layout_margin="15dp"
+            android:textColor="#020A32"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/popup_setting_Close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#0000ffff"
+        android:src="@drawable/close" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="60dp"
+    tools:context=".Activity_2Join">
+
+
+    <ImageButton
+        android:id="@+id/guest_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="#f6e653"
+        app:srcCompat="@drawable/guest" />
+
+    <ImageButton
+        android:visibility="gone"
+        android:id="@+id/google_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="#f6e653"
+        app:srcCompat="@drawable/googleplaygame" />
+
+
+</LinearLayout>
